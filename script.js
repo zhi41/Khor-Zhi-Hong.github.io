@@ -13,10 +13,10 @@
   if (saved) root.setAttribute("data-theme", saved);
 
   function currentTheme() {
-    return root.getAttribute("data-theme") || "dark";
+    return root.getAttribute("data-theme") || "light";
   }
   function toggleTheme() {
-    const next = currentTheme() === "light" ? "dark" : "light";
+    const next = currentTheme() === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
   }
